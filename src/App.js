@@ -5,12 +5,14 @@ import Banner1 from './components/contactDetails.js';
 import Blurb from './components/blurb.js';
 import SocialLink from './components/socialLink.js';
 import ContactForm from './components/contactForm.js';
+import Video from './components/video.js';
 
 function App() {
   return (
     <div className="App">
       <Title />
       <SocialLink />
+      <Video />
       <Blurb />
       <Banner1 />
       <ContactForm />
