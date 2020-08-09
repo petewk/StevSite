@@ -1,0 +1,223 @@
+:root {
+  --main-green: #3f6163;
+  --main-lightgreen: #81a8aa;
+  --main-black: #222222;
+}
+
+
+body {
+  border: 2px solid var(--main-green);
+  height: 100%;
+  margin: 15px 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 5px;
+}
+
+#title>div {
+  width: 100%;
+  justify-content: center;
+}
+
+#title>div>img {
+  max-height: 25vh;
+  max-width: 40%;
+  margin: 1% auto;
+  display: block;
+}
+
+#contactInfo {
+  width: 100%;
+  color: var(--main-green);
+}
+
+#contactInfo>span>h2>i {
+  color: var(--main-black)
+}
+
+#banner {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position:relative;
+  margin:5% auto;
+  background-color:white;
+  border:3px solid var(--main-black);
+  padding: 15px;
+}
+
+#banner:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border: 3px solid #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+#blurbContainer{
+    width: 60%;
+    height: auto;
+    display: block;
+    text-align: center;
+    position:relative;
+    margin:2% auto 0 auto;
+    background-color:white;
+    border:3px solid var(--main-green);
+    font-size: large;
+    font-weight: bold;
+    color:var(--main-black);
+
+}
+
+#blurbContainer:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border: 3px solid #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+#blurbContainer > h1 {
+  color: var(--main-green);
+}
+
+#blurbContainer > div {
+  padding: 15px;
+}
+
+#socialLink {
+  width: 100%;
+}
+#buttonBanner {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-top: 2%;
+}
+
+.linkButton {
+  display: inline-block;
+  padding: 0 8%;
+  font-size: 4rem;
+}
+
+#twitter {
+  color: #00acee;
+}
+
+#facebook {
+  color: #4267B2;
+}
+
+#instagram {
+  color: transparent;
+ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+ -webkit-background-clip: text;
+}
+
+.linkButton >a {
+  color: inherit;
+}
+
+#contactForm {
+  display: block;
+  margin: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+form {
+  justify-content: center;
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  white-space:pre-line;
+  position:relative;
+  vertical-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+input {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  text-align:center;
+  border: 2px solid var(--main-green);
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  height: 8vh;
+  transition: 0.3s;
+}
+
+textarea {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  text-align:center;
+  border: 2px solid var(--main-green);
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  height: 8vh;
+  transition: 0.3s;
+  vertical-align: center;
+}
+
+input:focus, textarea:focus{
+  background-color: var(--main-green);
+  color: white;
+}
+
+textarea::placeholder {
+  vertical-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 5px;
+}
+
+
+button {
+  width: 35%;
+  height: 7vh;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.3rem;
+  color: var(--main-green);
+  border: 2px solid var(--main-black);
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  padding:0;
+  padding-top: 5px;
+}
+
+button:after {
+  content: "";
+  background: var(--main-lightgreen);
+  display: block;
+  position: relative;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
