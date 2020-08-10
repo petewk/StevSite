@@ -202,8 +202,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
-  padding:0;
-  padding-top: 5px;
+  padding: 5px 10px;
 }
 
 button:after {
@@ -224,4 +223,11 @@ button:active:after {
   margin: 0;
   opacity: 1;
   transition: 0s
+}
+
+
+video {
+  max-width: 70%;
+  margin: 0 auto;
+  display: block;
 }
