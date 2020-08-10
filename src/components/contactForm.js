@@ -52,7 +52,7 @@ export default class ContactForm extends Component{
           <input type="text" name="name" id="name" onChange={this.handleChangename} value={this.state.name} placeholder="Enter your name"/> <br />
           <input type="text" id="contact" name="contact" onChange={this.handleChangecontact} value={this.state.contact} placeholder="Enter your email address or phone number"/><br />
           <textarea type="textarea" name="job" id="job" onChange={this.handleChangejob} value={this.state.job} placeholder="Please write a little about the job you're contacting us about"/><br />
-          <button type="submit" onClick={this.handleClick}>Click here and we'll get back to you soon!</button>
+          <button type="submit" id="submit" onClick={this.handleClick}>Click here and we'll get back to you soon!</button>
         </form>
       </section>
     )

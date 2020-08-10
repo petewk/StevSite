@@ -5,6 +5,17 @@
 }
 
 
+@media(max-width: 1000px){
+  #contactInfo span{
+    width: 90%;
+  }
+
+  #name, #contact, #job, #submit {
+    width: 90%;
+  }
+
+}
+
 body {
   border: 2px solid var(--main-green);
   height: 100%;
