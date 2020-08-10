@@ -6,7 +6,7 @@ export default class Video extends Component {
   render() {
     return(
       <div>
-        <video controls autoPlay preload="auto"><source  src={sample} loop="true" type="video/mp4"/></video>
+        <video controls autoPlay loop preload="auto"><source  src={sample}  type="video/mp4"/></video>
       </div>
     )
   }
