@@ -6,10 +6,12 @@ import Blurb from './components/blurb.js';
 import SocialLink from './components/socialLink.js';
 import ContactForm from './components/contactForm.js';
 import Video from './components/video.js';
+import NavBar from './components/navBar.js';
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Title />
       <SocialLink />
       <Video />

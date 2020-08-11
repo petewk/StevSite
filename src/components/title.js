@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../media/title.jpg';
+import logo from '../media/title.PNG';
 
 export default class Title extends Component{
   render(){
